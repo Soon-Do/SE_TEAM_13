@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+#wrap {
+  text-align: center;
+}
+
+/* container영역 */
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* row영역 */
+.row {
+  padding: 0 28px;
+}
+
+.wrap {
+  width: 500px;
+  height: 500px;
+}
+.wrap .logo {
+  margin-top: 40px;
+}
+
+.login_form .text_field {
+  font-size: 15px;
+  width: 500px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #71c9ce;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.login_form .submit_btn {
+  width: 500px;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 5px;
+  background: #71c9ce;
+}
+
+.signup {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  width: 500px;
+  height: 50px;
+}
+.signup  a {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  padding: 9.5px 212.2px;
+  margin-top: 20px;
+  width: 500px;
+  height: 50px;
+  color: #71c9ce;
+  font-size: 20px;
+  font-family:'Noto Sans KR', sans-serif;
+  font-weight: bold;
+}
