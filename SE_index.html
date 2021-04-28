@@ -7,6 +7,7 @@
     <meta name="author" content="SE_team 13">
     <meta name="description" content="소프트웨어공학 팀프로젝트 쇼핑몰사이트 만들기">
     <meta name="keywords" content="쇼핑몰, 스포츠, 스포츠용품, 옷, 기구, 소프트웨어공학, 서울과학기술대학교">
+    <meta name="google" value="notranslate">
     <title>Shopping</title>
 
     <!-- CSS -->
@@ -72,13 +73,13 @@
       <div class="container">
         <div class="row">
           <div class="main_banner">
-            <div class="swiper-container">
+            <div class="swiper-container main-swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide ss"></div>
-                <div class="swiper-slide ss"></div>
-                <div class="swiper-slide ss"></div>
-                <div class="swiper-slide ss"></div>
-                <div class="swiper-slide ss"></div>
+                <div class="swiper-slide ss1"></div>
+                <div class="swiper-slide ss1"></div>
+                <div class="swiper-slide ss1"></div>
+                <div class="swiper-slide ss1"></div>
+                <div class="swiper-slide ss1"></div>
               </div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-prev">
@@ -94,11 +95,27 @@
     </div>
     <!-- //banner -->
 
-    <div id="product">
+    <div id="lastest-product">
       <div class="container">
         <div class="row">
-          <div class="product">
-            <h2>상품이 들어갈 자리?</h2>
+          <div class="lastest-product">
+            <a href="#"><strong>최신 등록 상품</strong></a>
+            <div class="swiper-container product-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide ss2 clearfix">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <div class="swiper-slide ss2">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -144,7 +161,7 @@
     <script src="js/modernizr-custom.js"></script>
     <script src="js/swiper.min.js"></script>
     <script>
-      var mySwiper = new Swiper('.swiper-container',{
+      var mainSwiper = new Swiper('.main-swiper',{
         loop: true,
         autoplay: {
           delay: 5000,
@@ -157,6 +174,11 @@
           el: '.swiper-pagination',
           clickable: true,
         },
+      });
+
+      var poductSwiper = new Swiper('.product-swiper',{
+        loop: true,
+        slidesPerView: 1,
       });
     </script>
   </body>

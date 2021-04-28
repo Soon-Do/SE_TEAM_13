@@ -10,9 +10,9 @@
   width: 100%;
   height: 450px;
 }
-#product {
+#lastest-product {
   width: 100%;
-  height: 500px;
+  height: 1000px;
 }
 #footer {
   width: 100%;
@@ -167,7 +167,7 @@
   width: 100%;
   height: 450px;
 }
-.main_banner .ss {
+.main_banner .ss1 {
   background: url("../img/banner.png") no-repeat center center;
   background-size: cover;
   z-index: 1;
@@ -184,8 +184,31 @@
 
 
 /* 상품진열 */
-.product {}
-
+.lastest-product {
+  padding-top: 50px;
+}
+.lastest-product .product-swiper {
+  padding-top: 50px;
+}
+.lastest-product a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  color: #222;
+}
+.lastest-product .item {
+  float: left;
+  width: 22%;
+  margin: 0 2%;
+  height: 250px;
+  background: url('../img/lastest-product.png') no-repeat center center;
+}
+.lastest-product .item:first-child {
+  margin-left: 0;
+}
+.lastest-product .item:last-child {
+  margin-right: 0;
+}
 
 /* footer */
 .footer {
